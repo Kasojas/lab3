@@ -8,16 +8,15 @@ class ListExamples {
   // Returns a new list that has all the elements of the input list for which
   // the StringChecker returns true, and not the elements that return false, in
   // the same order they appeared in the input list;
-  static List<String> filter(List<String> list, StringChecker sc) {
+  static List<String> filter(List<String> list, String sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
-      if(sc.checkString(s)) {
+      if(sc.contains(s)) {
         result.add(0, s);
       }
     }
     return result;
   }
-
 
   // Takes two sorted list of strings (so "a" appears before "b" and so on),
   // and return a new list that has all the strings in both list in sorted order.
