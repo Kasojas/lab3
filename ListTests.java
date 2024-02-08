@@ -3,7 +3,7 @@ import org.junit.*;
 import java.util.List;
 import java.util.ArrayList;
 
-interface StringChecker { boolean checkString(String s); }
+//interface StringChecker { boolean checkString(String s); }
 
 public class ListTests {
     @Test
